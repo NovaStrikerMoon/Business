@@ -140,10 +140,6 @@
               <span>Chrome Web Storeで見る</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
-            <button type="button" data-select-product="gofile" class="select-support-btn inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold hover:bg-indigo-100 transition-colors">
-              <i data-lucide="heart" class="w-3.5 h-3.5"></i>
-              <span>開発を支援する</span>
-            </button>
           </div>
         </article>
 
@@ -192,10 +188,6 @@
               <span>Chrome Web Storeで見る</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
-            <button type="button" data-select-product="yahoo" class="select-support-btn inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-indigo-50 text-indigo-700 text-xs font-semibold hover:bg-indigo-100 transition-colors">
-              <i data-lucide="heart" class="w-3.5 h-3.5"></i>
-              <span>開発を支援する</span>
-            </button>
           </div>
         </article>
       </div>
@@ -230,48 +222,25 @@
             </div>
           </div>
 
-          <!-- Interactive Support Selection Card -->
+          <!-- Support Access Info Card -->
           <div class="lg:col-span-6 bg-slate-50 rounded-2xl border border-slate-200 p-6">
-            <h3 class="text-base font-bold text-slate-900 mb-4">支援プランの確認・選択</h3>
-
-            <div class="space-y-4">
-              <div>
-                <label for="supportTarget" class="block text-xs font-semibold text-slate-700 mb-1.5">対象ソフトウェア</label>
-                <select id="supportTarget" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                  <option value="gofile">Gofile 一括DL（Chrome拡張機能）</option>
-                  <option value="yahoo">ヤフオク出品者ブロッカー（Chrome拡張機能）</option>
-                  <option value="general">NovaStriker 開発活動全体への支援</option>
-                </select>
+            <h3 class="text-base font-bold text-slate-900 mb-3">開発支援のご利用方法</h3>
+            <p class="text-sm text-slate-600 leading-relaxed mb-4">
+              開発支援は各Chrome拡張機能内の支援メニューから利用できます。拡張機能の設定画面や完了画面に設置された案内リンクから、任意の金額（300円〜・税込）をお選びいただけます。
+            </p>
+            <div class="rounded-xl bg-white border border-slate-200 p-4 text-xs text-slate-600 space-y-2">
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>対象ソフトウェア：</strong>Gofile 一括DL / ヤフオク出品者ブロッカー</span>
               </div>
-
-              <div>
-                <span class="block text-xs font-semibold text-slate-700 mb-1.5">支援金額（税込）</span>
-                <div class="grid grid-cols-3 gap-2">
-                  <button type="button" data-amount="300" class="amount-btn py-2 px-3 rounded-lg border border-indigo-600 bg-indigo-50 text-indigo-700 text-sm font-semibold">300円</button>
-                  <button type="button" data-amount="500" class="amount-btn py-2 px-3 rounded-lg border border-slate-300 bg-white text-slate-700 text-sm font-semibold hover:bg-slate-50">500円</button>
-                  <button type="button" data-amount="1000" class="amount-btn py-2 px-3 rounded-lg border border-slate-300 bg-white text-slate-700 text-sm font-semibold hover:bg-slate-50">1,000円</button>
-                </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>決済方式：</strong>Stripe を利用した都度のクレジットカード決済（追加手数料なし）</span>
               </div>
-
-              <div class="rounded-xl bg-white border border-slate-200 p-4 text-xs text-slate-600 space-y-1">
-                <div class="flex justify-between">
-                  <span>選択中の対象：</span>
-                  <span id="summaryTarget" class="font-semibold text-slate-900">Gofile 一括DL</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>お支払い金額（税込）：</span>
-                  <span id="summaryAmount" class="font-semibold text-slate-900">300円（都度決済・追加手数料なし）</span>
-                </div>
-                <div class="flex justify-between">
-                  <span>提供形態：</span>
-                  <span class="text-slate-700">無料公開ソフトウェアへの任意チップ</span>
-                </div>
+              <div class="flex items-start gap-2">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+                <span><strong>提供形態：</strong>無料公開ソフトウェアへの任意チップ（追加機能の販売やサブスクリプションではありません）</span>
               </div>
-
-              <button id="proceedSupportBtn" type="button" class="w-full inline-flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition-colors shadow-sm">
-                <i data-lucide="lock" class="w-4 h-4"></i>
-                <span>決済手続きの確認へ進む（Stripe）</span>
-              </button>
             </div>
           </div>
         </div>
@@ -320,7 +289,7 @@
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 px-6 py-4 bg-slate-50/50">
             <dt class="font-semibold text-slate-900">運営統括責任者</dt>
-            <dd class="sm:col-span-2 text-slate-700">NovaStriker 運営責任者</dd>
+            <dd class="sm:col-span-2 text-slate-700">運営責任者</dd>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 px-6 py-4">
             <dt class="font-semibold text-slate-900">所在地</dt>
@@ -386,62 +355,11 @@
     </div>
   </footer>
 
-  <!-- Support Confirmation Modal -->
-  <div id="supportModal" class="hidden fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-xl border border-slate-200">
-      <div class="flex items-center justify-between mb-4">
-        <h3 id="modalTitle" class="text-lg font-bold text-slate-900">支援内容の確認</h3>
-        <button id="closeModalBtn" type="button" aria-label="閉じる" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 hover:bg-slate-100">
-          <i data-lucide="x" class="w-5 h-5"></i>
-        </button>
-      </div>
-      <div class="space-y-3 text-sm text-slate-600 mb-6">
-        <p>以下の内容でStripe決済ページへ進む準備が整っています。</p>
-        <div class="rounded-xl bg-slate-50 border border-slate-200 p-4 space-y-1.5 text-xs">
-          <div class="flex justify-between">
-            <span>対象：</span>
-            <span id="modalTarget" class="font-semibold text-slate-900"></span>
-          </div>
-          <div class="flex justify-between">
-            <span>金額：</span>
-            <span id="modalAmount" class="font-semibold text-slate-900"></span>
-          </div>
-          <div class="flex justify-between">
-            <span>決済方法：</span>
-            <span class="font-semibold text-slate-900">Stripe（クレジットカード）</span>
-          </div>
-        </div>
-        <p class="text-xs text-slate-500">
-          ※ 実際の公開時は、このボタンから作成したStripe Payment Link（<code>https://buy.stripe.com/...</code>）へ直接遷移するように設定してください。
-        </p>
-      </div>
-      <div class="flex justify-end gap-2">
-        <button id="modalConfirmCloseBtn" type="button" class="px-4 py-2 rounded-lg bg-indigo-600 text-white text-xs font-semibold hover:bg-indigo-700 transition-colors">閉じる</button>
-      </div>
-    </div>
-  </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       if (window.lucide) {
         window.lucide.createIcons();
       }
-
-      // Stripe Payment Links configuration (replace with actual Stripe Payment Link URLs when ready)
-      const PAYMENT_LINKS = {
-        gofile: { 300: '', 500: '', 1000: '' },
-        yahoo: { 300: '', 500: '', 1000: '' },
-        general: { 300: '', 500: '', 1000: '' }
-      };
-
-      const TARGET_LABELS = {
-        gofile: 'Gofile 一括DL',
-        yahoo: 'ヤフオク出品者ブロッカー',
-        general: 'NovaStriker 開発活動全体への支援'
-      };
-
-      let selectedTarget = 'gofile';
-      let selectedAmount = 300;
 
       // Mobile menu toggle
       const mobileMenuBtn = document.getElementById('mobileMenuBtn');
@@ -474,70 +392,6 @@
             }
           });
         });
-      });
-
-      // Support target & amount state
-      const supportTargetSelect = document.getElementById('supportTarget');
-      const summaryTarget = document.getElementById('summaryTarget');
-      const summaryAmount = document.getElementById('summaryAmount');
-      const amountBtns = document.querySelectorAll('.amount-btn');
-
-      function updateSummary() {
-        summaryTarget.textContent = TARGET_LABELS[selectedTarget];
-        summaryAmount.textContent = `${selectedAmount.toLocaleString()}円（都度決済・追加手数料なし）`;
-      }
-
-      supportTargetSelect.addEventListener('change', (e) => {
-        selectedTarget = e.target.value;
-        updateSummary();
-      });
-
-      amountBtns.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          selectedAmount = Number(btn.dataset.amount);
-          amountBtns.forEach((b) => {
-            b.classList.remove('border-indigo-600', 'bg-indigo-50', 'text-indigo-700');
-            b.classList.add('border-slate-300', 'bg-white', 'text-slate-700');
-          });
-          btn.classList.add('border-indigo-600', 'bg-indigo-50', 'text-indigo-700');
-          btn.classList.remove('border-slate-300', 'bg-white', 'text-slate-700');
-          updateSummary();
-        });
-      });
-
-      // Select product from card button
-      document.querySelectorAll('.select-support-btn').forEach((btn) => {
-        btn.addEventListener('click', () => {
-          selectedTarget = btn.dataset.selectProduct;
-          supportTargetSelect.value = selectedTarget;
-          updateSummary();
-          document.getElementById('support').scrollIntoView({ behavior: 'smooth' });
-        });
-      });
-
-      // Modal handling
-      const modal = document.getElementById('supportModal');
-      const modalTarget = document.getElementById('modalTarget');
-      const modalAmount = document.getElementById('modalAmount');
-      const closeModalBtn = document.getElementById('closeModalBtn');
-      const modalConfirmCloseBtn = document.getElementById('modalConfirmCloseBtn');
-
-      document.getElementById('proceedSupportBtn').addEventListener('click', () => {
-        const configuredUrl = PAYMENT_LINKS[selectedTarget]?.[selectedAmount];
-        if (configuredUrl) {
-          window.open(configuredUrl, '_blank', 'noopener,noreferrer');
-          return;
-        }
-        modalTarget.textContent = TARGET_LABELS[selectedTarget];
-        modalAmount.textContent = `${selectedAmount.toLocaleString()}円（税込）`;
-        modal.classList.remove('hidden');
-      });
-
-      [closeModalBtn, modalConfirmCloseBtn].forEach((el) => {
-        el.addEventListener('click', () => modal.classList.add('hidden'));
-      });
-      modal.addEventListener('click', (e) => {
-        if (e.target === modal) modal.classList.add('hidden');
       });
     });
   </script>
